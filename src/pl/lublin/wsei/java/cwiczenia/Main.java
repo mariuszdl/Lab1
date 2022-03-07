@@ -48,5 +48,13 @@ public class Main {
         System.out.println("\nNazwaliśmy to \"witaminą B3\"");
 
         // ----------------------------------------------------------------
+        System.out.println("\nTabelka funkcji sin:");
+
+        System.out.printf("\nalfa\tsin(alfa)\n");
+        for (int i = 0; i < 370; i += 10) {
+            System.out.printf("%d\t\t%f\t\n", i, Math.sin(i / 360.0 * 2 * Math.PI));
+        }
+
+        // ----------------------------------------------------------------
     }
 }
