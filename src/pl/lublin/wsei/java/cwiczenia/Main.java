@@ -17,5 +17,7 @@ public class Main {
             komentarz
             wielolinijkowy
          */
+
+        System.out.println("Hello Java world\n");
     }
 }
