@@ -19,5 +19,34 @@ public class Main {
          */
 
         System.out.println("Hello Java world\n");
+
+        System.out.println("Print bez znaczników końca linii:");
+        System.out.print("Ala");
+        System.out.print("ma");
+        System.out.print("kota");
+
+        System.out.println("\n\nPrintln:");
+        System.out.println("Ala");
+        System.out.println("ma");
+        System.out.println("kota");
+
+        System.out.println("\nPrint z użyciem znaczników końca linii:");
+        System.out.print("Ala\n");
+        System.out.print("ma\n");
+        System.out.print("kota\n");
+
+
+        // ----------------------------------------------------------------
+        System.out.println("\nWypisywanie wartości zmiennych za pomocą printf:");
+        int a = 3;
+        double b = 4.21;
+        String s = "jakiś tekst";
+
+        System.out.printf("a = %d, b = %.2f, s = %20s %n", a, b, s);
+
+        // ----------------------------------------------------------------
+        System.out.println("\nNazwaliśmy to \"witaminą B3\"");
+
+        // ----------------------------------------------------------------
     }
 }
