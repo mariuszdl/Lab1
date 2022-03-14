@@ -1,5 +1,7 @@
 package pl.lublin.wsei.java.cwiczenia;
 
+import pl.lublin.wsei.java.cwiczenia.mylib.Account;
+
 import java.util.Locale;
 import java.util.Random;
 import java.util.Scanner;
@@ -131,6 +133,19 @@ public class Main {
         System.out.printf("MIN = %d, MAX = %d, AVG = %f", mn, mx, (float) avg / liczby.length);
 
         // ----------------------------------------------------------------
+
+        System.out.println("\n\n\nWykorzystanie nowo utworzonej klasy Account:\n");
+        Account acc = new Account();
+        acc.setName("mariusz Dłubak");
+        System.out.println(acc.getName());
+        System.out.printf("%s%n",Account.capitalize("stanisław marusarz"));
+
+        System.out.println("\nTest metody translit:\n");
+        System.out.println(Account.translit("Поповv"));
+        System.out.println(Account.translit("Волков"));
+        System.out.println(Account.translit("Михайлов"));
+        System.out.println(Account.translit("Алексеев"));
+        System.out.println(Account.translit("Козлов"));
     }
 
     private static String leftPad(String aText, char aChar, int aWidth) {
