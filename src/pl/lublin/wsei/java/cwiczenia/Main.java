@@ -1,5 +1,6 @@
 package pl.lublin.wsei.java.cwiczenia;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
@@ -99,5 +100,23 @@ public class Main {
         } while (true);
 
         // ----------------------------------------------------------------
+        System.out.println("\nWyświetlanie postaci dwójkowej oraz szesnastkowej:\n");
+        Scanner in = new Scanner(System.in);
+        int x;
+        System.out.print("Podaj liczbę: ");
+        x = in.nextInt();
+        String bin = leftPad(Integer.toBinaryString(x), '0', 8);
+        String hex = leftPad(Integer.toHexString(x).toUpperCase(Locale.ROOT), '0', 4);
+        System.out.printf("DEC = %d, BIN = %s, HEX = %s", x, bin, hex);
+
+        // ----------------------------------------------------------------
+    }
+
+    private static String leftPad(String aText, char aChar, int aWidth) {
+        String res = aText;
+        for (int i = 0; i < aWidth - aText.length(); i++) {
+            res = aChar + res;
+        }
+        return res;
     }
 }
