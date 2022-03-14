@@ -81,6 +81,23 @@ public class Main {
         num2 = input.nextInt();
 
         System.out.printf("Wynik dodawania %d + %d = %d%n", num1, num2, num1 + num2);
+
+        // ----------------------------------------------------------------
+        System.out.println("\nPobieranie danych od użytkownika z wykorzystaniem pętli do while");
+        System.out.println("(pętla kończy działanie, kiedy jako którykolwiek z argumentów zostanie podane 0):\n");
+
+        Scanner inp = new Scanner(System.in);
+        int n1 = 0, n2 = 0;
+        do {
+            System.out.print("Podaj pierwszą liczbę: ");
+            n1 = inp.nextInt();
+            if (n1 == 0) break;
+            System.out.print("Podaj drugą liczbę: ");
+            n2 = inp.nextInt();
+            if (n2 == 0) break;
+            System.out.printf("Wynik dodawania %d + %d = %d%n", n1, n2, n1 + n2);
+        } while (true);
+
         // ----------------------------------------------------------------
     }
 }
